@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="registervoter.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* Set background image */
+            background-image: url('');
+            /* Set background image to cover the entire viewport */
+            background-size: cover;
+            /* Center the background image */
+            background-position: center;
+            /* Set background color if the image is not available or while it is loading */
+            background-color: #f0f0f0; /* You can change this color to any color you prefer */
+            /* Ensure the background image covers the whole screen */
+            height: 100vh;
+        }
+        /* Add additional styles as needed */
+    </style>
+</head>
+<body>
+    <div class="box" id="register-voter-form" >
+        <form>
+            <fieldset>
+                <h2>Register Voter</h2>
+                <div class="Field">
+                    <label>First name <sup>*</sup></label>
+                    <input id="voterFirstName" type="text" placeholder="First name">
+                </div>
+                <div class="Field">
+                    <label>Date of Birth</label>
+                    <input id="voterDateOfBirth" type="date">
+                </div>
+                <div class="Field">
+                    <label>Aadhaar Id <sup>*</sup></label>
+                    <input id="voterAadhaarId" type="text" placeholder="Aadhaar Id">
+                </div>
+                <div class="Field">
+                    <label>Voter Id</label>
+                    <input id="voterId" type="file" accept="image/*">
+                </div>
+                <div class="Field">
+                    <label>District</label>
+                    <input id="voterDistrict" type="text" placeholder="District">
+                </div>
+                <input type="submit" value="Add Voter" id="submitVoter">
+            </fieldset>
+        </form>
+    </div>
+    <script>
+    document.getElementById("submitVoter").addEventListener("click", async (e) => {
+        e.preventDefault();
+        const voterFirstName = document.getElementById("voterFirstName").value;
+        const voterDateOfBirth = document.getElementById("voterDateOfBirth").value;
+        const voterAadhaarId = document.getElementById("voterAadhaarId").value;
+        const voterId = document.getElementById("voterId").files[0];
+        const voterDistrict = document.getElementById("voterDistrict").value;
+        // Perform necessary operations with the form data
+    });</script>
+</body>
+</html>

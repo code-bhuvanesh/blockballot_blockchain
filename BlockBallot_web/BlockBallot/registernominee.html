@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="registernominee.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* Set background image */
+            background-image: url('');
+            /* Set background image to cover the entire viewport */
+            background-size: cover;
+            /* Center the background image */
+            background-position: center;
+            /* Set background color if the image is not available or while it is loading */
+            background-color: #f0f0f0; /* You can change this color to any color you prefer */
+            /* Ensure the background image covers the whole screen */
+            height: 100vh;
+        }
+        /* Add additional styles as needed */
+    </style>
+</head>
+<body>
+    <div class="box" id="register-nominee-form" >
+        <form>
+            <fieldset>
+                <h2>Register Nominee</h2>
+                <div class="Field">
+                    <label>First name <sup>*</sup></label>
+                    <input id="firstName" type="text" placeholder="First name">
+                </div>
+                <div class="Field">
+                    <label>Last name</label>
+                    <input id="lastName" type="text" placeholder="Last name">
+                </div>
+                <div class="Field">
+                    <label>Date of Birth</label>
+                    <input id="dateOfBirth" type="date">
+                </div>
+                <div class="Field">
+                    <label>Gender</label>
+                    <input id="gender" type="text" placeholder="Gender">
+                </div>
+                <div class="Field">
+                    <label>Aadhaar Id <sup>*</sup></label>
+                    <input id="aadhaarId" type="text" placeholder="Aadhaar Id">
+                </div>
+                <div class="Field">
+                    <label>Political Name <sup>*</sup></label>
+                    <input id="politicalName" type="text" placeholder="Political Name">
+                </div>
+                <div class="Field">
+                    <label>Party Image</label>
+                    <input id="partyImage" type="file" accept="image/*">
+                </div>
+                <div class="Field">
+                    <label>District</label>
+                    <input id="district" type="text" placeholder="District">
+                </div>
+                <input type="submit" value="Add Nominee" id="submitNominee">
+            </fieldset>
+        </form>
+    </div>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nomineeCard = document.getElementById("nominee-card");
+            const voterCard = document.getElementById("voter-card");
+
+            const nomineeForm = document.getElementById("register-nominee-form");
+            const voterForm = document.getElementById("register-voter-form");
+
+            nomineeCard.addEventListener("click", () => {
+                voterForm.style.display = "none";
+                nomineeForm.style.display = "block";
+            });
+
+            voterCard.addEventListener("click", () => {
+                nomineeForm.style.display = "none";
+                voterForm.style.display = "block";
+            });
+
+            document.getElementById("submitNominee").addEventListener("click", async (e) => {
+                e.preventDefault();
+                const firstName = document.getElementById("firstName").value;
+                const lastName = document.getElementById("lastName").value;
+                const dateOfBirth = document.getElementById("dateOfBirth").value;
+                const gender = document.getElementById("gender").value;
+                const aadhaarId = document.getElementById("aadhaarId").value;
+                const politicalName = document.getElementById("politicalName").value;
+                const partyImage = document.getElementById("partyImage").files[0];
+                const district = document.getElementById("district").value;
+                // Perform necessary operations with the form data
+            });
+        })
+</script>
+</body>
+</html>

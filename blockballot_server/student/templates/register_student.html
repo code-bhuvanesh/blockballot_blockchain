@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title>Student Registration Form</title>
+    <style>
+       td {font-size: 3em;}
+       /* td {font-size: 3em;} */
+       input {height:50px;
+            font-size:14pt;}
+        select {height:50px;
+            font-size:14pt;}
+    </style>
+</head>
+<body style="font-size: 3em; " bgcolor="99FFFF">
+<form action="" style=" position: absolute;  left: 15%; width:50%; height:50%; margin:0 auto;" method="post",  enctype="multipart/form-data">
+
+	<table cellpadding="6" width="100%" bgcolor="99FFFF" align="center"
+	cellspacing="6">
+	
+		<tr>
+			<td colspan=2>
+			<center><font size=8><b>Student Registration Form</b></font></center>
+			</td>
+		</tr>
+        <tr>
+			<td>Register Number</td>
+			<td><input type="text" name="regno" id="regno" size="40" ></td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" name="name" id="name" size="30"></td>
+		</tr>
+		<tr>
+			<td>Section</td>
+			<td><input type="text" name="sec" id="sec" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td>Course</td>
+			<td><select name="course">
+			<option value="-1" selected>select..</option>
+			<option value="BE CSE">BE CSE Regular</option>
+			<option value="BE CSE - AI">BE CSE -AI</option>
+			<option value="BE CSE">BE CSE - Blockchain</option>
+			<option value="BE CSE">BE CSE - Cyber security</option>
+			<option value="BE CSE">BE CSE - Robotics</option>
+			<option value="MCA">MCA</option>
+			<option value="MBA">MBA</option>
+			<option value="BCA">BCA</option>
+			</select></td>
+		</tr>
+		
+		<tr>
+			<td>DOB</td>
+			<td><input type="date" name="dob" id="dob" size="30"></td>
+		</tr>
+		<tr>
+			<td>Block</td>
+			<td><input type="text" name="block" id="block" size="30"></td>
+		</tr>
+		<tr>
+			<td>EmailId</td>
+			<td><input type="text" name="emailid" id="emailid" size="30"></td>
+		</tr>
+
+		<tr>
+			<td>Mobile Number</td>
+			<td><input type="tel" name="Mobile Number" id="Mobile Number" size="30"></td>
+		</tr>
+		
+
+		<tr>
+			<td>Father Name</td>
+			<td><input type="text" name="fathername" id="fathername"
+			size="30"></td>
+		</tr>
+		<tr>
+			<td>Mother Name</td>
+			<td><input type="text" name="mothername" id="Mother Name" size="30"></td>
+		</tr>
+		<tr>
+			<td>Parents Contact</td>
+			<td><input type="tel" name="parents contact" id="Parents Contact" size="30"></td>
+		</tr>
+	
+		<tr>
+			<td>Co-ordinator</td>
+			<td><input type="text" name="Co-ordinator" id="Co-ordinator" size="30"></td>
+		</tr>
+		<tr>
+
+		<td>Boarding Point</td>
+			<td><input type="text" name="Boarding Point"id="Boarding Point" size="30">
+			</td>
+		</tr>
+
+		<tr>
+			<td>Sex</td>
+			<td>
+				<select name="sex" id="state" class="form-control">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+                </select>
+            </td>
+		</tr>
+
+		<tr>
+		<td>State</td>
+			<td>
+				<select name="state" id="state" class="form-control">
+					<option value="Andhra Pradesh">Andhra Pradesh</option>
+					<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+					<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+					<option value="Assam">Assam</option>
+					<option value="Bihar">Bihar</option>
+					<option value="Chandigarh">Chandigarh</option>
+					<option value="Chhattisgarh">Chhattisgarh</option>
+					<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+					<option value="Daman and Diu">Daman and Diu</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Lakshadweep">Lakshadweep</option>
+					<option value="Puducherry">Puducherry</option>
+					<option value="Goa">Goa</option>
+					<option value="Gujarat">Gujarat</option>
+					<option value="Haryana">Haryana</option>
+					<option value="Himachal Pradesh">Himachal Pradesh</option>
+					<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+					<option value="Jharkhand">Jharkhand</option>
+					<option value="Karnataka">Karnataka</option>
+					<option value="Kerala">Kerala</option>
+					<option value="Madhya Pradesh">Madhya Pradesh</option>
+					<option value="Maharashtra">Maharashtra</option>
+					<option value="Manipur">Manipur</option>
+					<option value="Meghalaya">Meghalaya</option>
+					<option value="Mizoram">Mizoram</option>
+					<option value="Nagaland">Nagaland</option>
+					<option value="Odisha">Odisha</option>
+					<option value="Punjab">Punjab</option>
+					<option value="Rajasthan">Rajasthan</option>
+					<option value="Sikkim">Sikkim</option>
+					<option value="Tamil Nadu">Tamil Nadu</option>
+					<option value="Telangana">Telangana</option>
+					<option value="Tripura">Tripura</option>
+					<option value="Uttar Pradesh">Uttar Pradesh</option>
+					<option value="Uttarakhand">Uttarakhand</option>
+					<option value="West Bengal">West Bengal</option>
+					</select></td>
+		</tr>
+
+		<td>District</td>
+			<td><input type="text" name="District"id="District" size="30">
+			</td>
+		</tr>
+		<td>Academic Year</td>
+			<td><input type="text" name="year"id="District" size="30">
+			</td>
+		</tr>
+
+		<td>Image Upload</td>
+			<td><input type="file" name="files" id="files" multiple><br><br>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="reset">
+			</td>
+			<td colspan="2">
+				<input type="submit" value="Submit Form" />
+			</td>
+		</tr>
+		
+	</table>
+	
+</form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Cards</title>
+    <link href="registercard.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* Set background image */
+            background-image: url('bg.jpg');
+            /* Set background image to cover the entire viewport */
+            background-size: cover;
+            /* Center the background image */
+            background-position: center;
+            /* Set background color if the image is not available or while it is loading */
+            background-color: #f0f0f0; /* You can change this color to any color you prefer */
+            /* Ensure the background image covers the whole screen */
+            height: 100vh;
+        }
+        /* Add additional styles as needed */
+    </style>
+</head>
+<body>
+    <div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">BlockBallot
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a class='active'href="index.html">Result</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="card-container">
+        <!-- Register Nominee Card -->
+        <div class="card" onclick="window.location.href='registernominee.html'">
+            <h2>Register Nominee</h2>
+            <p>Register your nominee for the upcoming elections.</p>
+            <!-- <form action="RegisterNominee.html">
+                <button type="submit">Register Nominee</button>
+            </form> -->
+        </div>
+        <!-- Register Voter Card -->
+        <div class="card" onclick="window.location.href='registrationvoter.html'">
+            <h2>Register Voter</h2>
+            <p>Register yourself as a voter for the upcoming elections.</p>
+            <!-- <form action="RegisterVoter.html">
+                <button type="submit">Register Voter</button>
+            </form> -->
+        </div>
+    </div>
+     
+</body>
+</html>
