@@ -1,0 +1,363 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_district",
+				"type": "uint256"
+			}
+		],
+		"name": "GetNominies",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "politicsName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "district",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct VotingSystem.NomineeOut[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "GetResults",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dob",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "politicsName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "district",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voterid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isRegistered",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct VotingSystem.Nominee[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_voterId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nominieVoterId",
+				"type": "uint256"
+			}
+		],
+		"name": "PutVote",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "admin",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "nominees",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dob",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "politicsName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "district",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "voterid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "votes",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isRegistered",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "nominiesList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dob",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "politicsName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "district",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "voterid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "votes",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isRegistered",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_voterId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_dob",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_politicsName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_district",
+				"type": "uint256"
+			}
+		],
+		"name": "registerNominee",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_aadharNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_voterId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_dob",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_district",
+				"type": "uint256"
+			}
+		],
+		"name": "registerVoter",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "test",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "voters",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "aadharNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "voterId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dob",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "district",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isVoted",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isRegistered",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

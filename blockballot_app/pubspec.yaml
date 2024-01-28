@@ -1,0 +1,51 @@
+name: blockballot
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  walletconnect_flutter_v2: ^2.1.4 #For metamask wallet connect
+  equatable: ^2.0.5 #For comparing objects
+  flutter_bloc: ^8.1.3 #For managing different states
+  get_it: ^7.6.4 #Accessing service objects
+  url_launcher: ^6.1.12 #For launching url to open MetaMask wallet App
+  image_picker: ^0.8.7
+  camera: ^0.10.3+2
+  graphql_flutter: ^5.1.2
+  http: ^0.13.5
+  cookie_jar: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icon.jpg
+    - assets/metamask_logo.png
+  #   - images/a_dot_ham.jpeg
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
